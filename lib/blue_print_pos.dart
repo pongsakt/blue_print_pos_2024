@@ -181,7 +181,7 @@ class BluePrintPos {
       feedCount: feedCount,
       useCut: useCut,
       useRaster: useRaster,
-      PaperSize: paperSize,
+      PaperSize: paperSize
     );
     await _printProcess(byteBuffer);
   }
@@ -204,7 +204,7 @@ class BluePrintPos {
       width: size,
       feedCount: feedCount,
       useCut: useCut,
-      PaperSize:paperSize,
+      PaperSize:paperSize
     );
   }
 
