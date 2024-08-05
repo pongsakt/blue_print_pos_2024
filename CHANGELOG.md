@@ -1,3 +1,22 @@
+## 0.1.4
+- refactor: add printer feature rule
+- refactor(android): destroy webview on done
+
+## 0.1.3
+- chore: bump fluetooth to 0.0.5 ([#25](https://github.com/iandis/blue_print_pos/pull/25)) 
+
+## 0.1.2
+- feat: add printer feature ([#23](https://github.com/iandis/blue_print_pos/pull/23))
+
+## 0.1.1
+- fix: fix bluetooth permission on Android 12 ([#21](https://github.com/iandis/blue_print_pos/pull/21))
+
+## 0.1.0
+- **BREAKING CHANGE** refactor: change bluetooth package to use Fluetooth ([#19](https://github.com/iandis/blue_print_pos/pull/19))
+
+## 0.0.23
+- fix: add `await` to print processes 
+
 ## 0.0.22
 - fix: empty section sublist and calculation ([#15](https://github.com/iandis/blue_print_pos/pull/13))
 
