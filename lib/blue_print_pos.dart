@@ -191,11 +191,12 @@ class BluePrintPos {
   /// [feedCount] to create more space after printing process done
   /// [useCut] to cut printing process
   Future<void> printQR(
-    String data, {
+    String data, 
+    PaperSize paperSize = PaperSize.mm58,
+{
     int size = 120,
     int feedCount = 0,
     bool useCut = false,
-    PaperSize: paperSize,
   }) async {
     final List<int> byteBuffer = await _getQRImage(data, size.toDouble());
     await printReceiptImage(
@@ -203,7 +204,7 @@ class BluePrintPos {
       width: size,
       feedCount: feedCount,
       useCut: useCut,
-      PaperSize: paperSize,
+      PaperSize:paperSize,
     );
   }
 
