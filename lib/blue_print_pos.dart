@@ -145,7 +145,7 @@ class BluePrintPos {
       );
       final List<int> byteBuffer = await _getBytes(
         bytes,
-        PaperSize: paperSize,
+        // PaperSize: paperSize,
         feedCount: isEndOfBatch ? feedCount : batchOptions.feedCount,
         useCut: isEndOfBatch ? useCut : batchOptions.useCut,
         useRaster: useRaster,
@@ -181,7 +181,7 @@ class BluePrintPos {
       feedCount: feedCount,
       useCut: useCut,
       useRaster: useRaster,
-      PaperSize: paperSize
+      // PaperSize: paperSize
     );
     await _printProcess(byteBuffer);
   }
@@ -191,20 +191,20 @@ class BluePrintPos {
   /// [feedCount] to create more space after printing process done
   /// [useCut] to cut printing process
   Future<void> printQR(
-    String data, 
-    PaperSize paperSize = PaperSize.mm58,
-{
+    String data,
+    // PaperSize paperSize = PaperSize.mm58,
+    {
     int size = 120,
     int feedCount = 0,
     bool useCut = false,
   }) async {
-    final List<int> byteBuffer = await _getQRImage(data,paperSize, size.toDouble());
+    final List<int> byteBuffer = await _getQRImage(data, size.toDouble());
     await printReceiptImage(
       byteBuffer,
       width: size,
       feedCount: feedCount,
       useCut: useCut,
-      PaperSize:paperSize
+      // PaperSize:paperSize
     );
   }
 
