@@ -3,7 +3,7 @@ description: Plugin to connecting bluetooth printer device, support on Android a
 version: 0.1.4
 homepage: https://github.com/iandis/blue_print_pos
 
-publish_to: 'none'
+publish_to: "none"
 
 environment:
   sdk: ">=2.16.0 <3.0.0"
@@ -12,7 +12,7 @@ environment:
 dependencies:
   # Utilities for generate ByteBuffer
   esc_pos_utils_plus: ^2.0.1+6
-  fluetooth: ^0.0.5
+  fluetooth: ^0.0.6
   # Framework
   flutter:
     sdk: flutter
